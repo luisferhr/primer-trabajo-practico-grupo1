@@ -36,7 +36,9 @@ body {
   grid-area: footer;
   background-color: #0D0C0C;
   display: flex;
-  align-items: start;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .logo2 {
@@ -89,6 +91,31 @@ body {
 .cerrar-menu{
   display: none;
   margin: 1rem;
+}
+
+.footer-list {
+  display: flex;
+  list-style: none;
+  margin: auto;
+
+}
+.enlace-footer {
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.link-footer {
+  text-decoration: none;
+}
+
+.copyright {
+  display: flex;
+  color: rgba(217, 217, 217, 0.40);
+  font-family: Livvic;
+  font-size: 14px;  
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /* @media (min-width: 600px) {
