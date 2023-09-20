@@ -34,9 +34,16 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: #8c96a0;
+  background-color: #0D0C0C;
+  display: flex;
+  align-items: start;
 }
 
+.logo2 {
+  width: 94px;
+  height: 51px;
+
+}
 .logo{
   width: 94px;
   height: 51px;
