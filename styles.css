@@ -43,7 +43,7 @@ body {
 
 .logo2 {
   width: 94px;
-  height: 51px;
+  height: 101px;
 
 }
 .logo{
@@ -97,14 +97,6 @@ body {
   display: flex;
   list-style: none;
   margin: auto;
-
-}
-.enlace-footer {
-  text-decoration: none;
-  padding: 0.5rem;
-}
-
-.link-footer {
   text-decoration: none;
 }
 
@@ -117,6 +109,16 @@ body {
   font-weight: 500;
   line-height: normal;
 }
+
+.redes{
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  gap: 10px;
+  position: absolute;
+  right: 0px;
+  bottom: 30px;
+}
+
 
 /* @media (min-width: 600px) {
   .grid-container {
