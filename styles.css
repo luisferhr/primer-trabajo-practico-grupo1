@@ -108,26 +108,6 @@ footer{
   background-color: #0d0c0c5b;
 }
 
-/* -----------------RESPONSIVE----------------- */
-@media(max-width: 1000px){
-  /* -----------------HEADER----------------- */
-  .nav-list, .action_btn{
-    display: none;
-  }
-
-  .navbar .toggle_btn{
-    display: block;
-  }
-
-  .dropdown_menu{
-    display: block;
-  }
-  /* -----------------MAIN----------------- */
-
-  /* -----------------FOOTER----------------- */
-
-}
-
 .footer {
   grid-area: footer;
   display: flex;
@@ -189,6 +169,27 @@ footer{
   font-weight: 500;
   line-height: normal;
 }
+
+/* -----------------RESPONSIVE----------------- */
+@media(max-width: 1000px){
+  /* -----------------HEADER----------------- */
+  .nav-list, .action_btn{
+    display: none;
+  }
+
+  .navbar .toggle_btn{
+    display: block;
+  }
+
+  .dropdown_menu{
+    display: block;
+  }
+  /* -----------------MAIN----------------- */
+
+  /* -----------------FOOTER----------------- */
+
+}
+
 
 @media(max-width: 600px){
 
