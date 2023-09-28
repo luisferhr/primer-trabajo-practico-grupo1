@@ -103,27 +103,6 @@ main{
 }
 
 /* -----------------FOOTER----------------- */
-
-
-/* -----------------RESPONSIVE----------------- */
-@media(max-width: 1000px){
-  /* -----------------HEADER----------------- */
-  .nav-list, .action_btn{
-    display: none;
-  }
-
-  .navbar .toggle_btn{
-    display: block;
-  }
-
-  .dropdown_menu{
-    display: block;
-  }
-  /* -----------------MAIN----------------- */
-
-  /* -----------------FOOTER----------------- */
-
-}
 .footer {
   grid-area: footer;
   display: flex;
@@ -137,7 +116,7 @@ main{
   flex: 1;
   position: absolute;
   left: 0;
-  padding-left: 1rem;
+  padding-left: 100px;
 }
 
 .footer-nav {
@@ -172,7 +151,7 @@ main{
   gap: 10px;
   position: absolute;
   right: 0;
-  padding-right: 1rem;
+  padding-right: 100px;
 }
 
 .copyright-footer {
@@ -186,6 +165,37 @@ main{
   position: fixed;
   bottom: 1rem;
 }
+
+/* -----------------RESPONSIVE----------------- */
+@media(max-width: 1000px){
+  /* -----------------HEADER----------------- */
+  .nav-list, .action_btn{
+    display: none;
+  }
+
+  .navbar .toggle_btn{
+    display: block;
+  }
+
+  .dropdown_menu{
+    display: block;
+  }
+  /* -----------------MAIN----------------- */
+
+  /* -----------------FOOTER----------------- */
+  .footer-nav {
+    bottom: 1rem;
+  }
+
+  .footer-nav li{
+    display: block;
+    bottom: 1rem;
+  }
+  .copyright-footer {
+    bottom: 0;
+  }
+}
+
 
 @media(max-width: 600px){
 
@@ -226,19 +236,22 @@ main{
   /* -----------------MAIN----------------- */
 
   /* -----------------FOOTER----------------- */
+  .footer-logo {
+    padding-left: 0;
+  }
+  
   .footer-nav{
     position: absolute;
     bottom: 1rem;
   }
+
   .footer-nav li{
     display: block;
     bottom: 1rem;
   }
 
   .footer-redes{
-    display: inline;
-    width: 5%;
-    padding: 0;
+    padding-right: 0;
   }
 
   .copyright-footer{
