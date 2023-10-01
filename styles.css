@@ -251,6 +251,8 @@ main{
   }
 
   .footer-redes{
+    width: 2rem;
+    display: block;
     padding-right: 0;
   }
 
