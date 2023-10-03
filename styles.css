@@ -137,7 +137,10 @@ main{
 } 
 
 .carousel-container{
-  margin: 0 100px;
+  margin: 0 auto;
+  padding: 0 50px;
+  min-width: 300px;
+  max-width: 1000px;
 }
 
 .agend-container{

@@ -30,44 +30,20 @@
       <li class="enlace-opcion"><a class="link-opcion" href="./contacto.html">Contacto</a></li>
   </ul>
   </header>
-  <main class="main main-conoceme">
-     <section class="box1-conoceme">
-        <div class="box1-texto-conoceme">
-            <h2>¡Hola! Soy Gustavosirios</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam et quasi ex necessitatibus tempore aut quam ut in quaerat hic velit, explicabo expedita voluptate, autem quia! Perferendis magni ipsa dolorum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptatibus saepe dolore inventore sint ullam rem nihil magni temporibus, nesciunt laudantium velit ea voluptatum corrupti accusamus illo autem odio fugit.</p>
-        </div>
-        <div class="box1-imagen-conoceme">
-            <img src="./fotos tp/collage.jpg" alt="">
-        </div>
-        <div class="box1-ideas-conoceme">
-            <h2>¿No sabes qué tatuarte? Te doy algunas ideas</h2>
-            <div class="box1-idea-imagenes">
-                <img src="./fotos tp/ideas.jpg" alt="">
-                <img src="./fotos tp/ideas.jpg" alt="">
-                <img src="./fotos tp/ideas.jpg" alt="">
-                <img src="./fotos tp/ideas.jpg" alt="">
-                <img src="./fotos tp/ideas.jpg" alt="">
-                <img src="./fotos tp/ideas.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="box2-trabajos-agenda">
-        <h2>Mira mis trabajos</h2>
-        <div class="box2-trabajos-imagenes"> 
-
-            <img src="./fotos tp/box2-collage.jpg" alt="">
-            <img src="./fotos tp/box2-collage.jpg" alt="">
-            <img src="./fotos tp/box2-collage.jpg" alt="">
-            <img src="./fotos tp/box2-collage.jpg" alt="">
-            <img src="./fotos tp/box2-collage.jpg" alt="">
-            <img src="./fotos tp/box2-collage.jpg" alt="">
-            <img src="./fotos tp/box2-collage.jpg" alt="">
-            <img src="./fotos tp/box2-collage.jpg" alt="">
-        </div>
-        <div class="box2-agendar">
-            <button class="box2-btn-agendar">Agenda</button>
-        </div>
-    </section>
+  <main class="main">
+    <h1>Formulario Básico</h1>
+    <form id="miFormulario" action="" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <input type="submit" value="Enviar">
+    </form>
   </main>
   <footer class="footer">
     <div class="logo-footer">
@@ -96,5 +72,6 @@
   </footer>
 
 <script src="./header.js"></script>
+<script src="./cotiza.js"></script>
 </body>
 </html>
