@@ -99,32 +99,76 @@ header{
 /* -----------------MAIN----------------- */
 main{
   grid-area: main;
-  background-color: aqua;
+  background-color: rgb(25, 25, 25);
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 10px
+}
+
+.main-principal{
+  width: auto;
+  height: 50rem;
+  margin: 50px 100px;
+}
+.fotito{
+  width: 100%;
+  height: 100%;
+}
+ 
+.main-fotos4{
+  margin: 0 170px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.main-fotos4 img{ 
+  width: 24%;
+}
+.agend-container{
+  margin: 50px 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo-agenda{
+  font-family: Merienda;
+  margin-right: 50px;
+  font-size: 20px;
+  color: #D9D9D9;
+}
+
+.btn-agendar{
+  font-family: 'Livvic', sans-serif;
+  font-weight: bold;
+  padding: 18px 24px;
+  border-radius: 20px;
+  background-color: #ECB935;
 }
 
 /* -----------------FOOTER----------------- */
-.footer {
+.footer{
   grid-area: footer;
   display: flex;
   background-color: #0D0C0C;
   width: 100%;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items: center;
-  text-align: center;
+ 
 }
 .footer-logo {
   flex: 1;
   position: absolute;
   left: 0;
-  padding-left: 100px;
+  padding-left: 5%;
 }
 
 .footer-nav {
   flex: 1;
+  display:flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 4rem;
+  box-sizing: border-box;
 }
 
 .footer-nav li{
@@ -151,19 +195,7 @@ main{
   gap: 10px;
   position: absolute;
   right: 0;
-  padding-right: 100px;
-}
-
-.copyright-footer {
-  display: inline;
-  color: rgba(217, 217, 217, 0.40);
-  font-family: Livvic;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  position: fixed;
-  bottom: 1rem;
+  padding-right: 5%;
 }
 
 /* -----------------RESPONSIVE----------------- */
@@ -183,23 +215,32 @@ main{
   /* -----------------MAIN----------------- */
 
   /* -----------------FOOTER----------------- */
+  .footer-logo {
+    padding-left: 0;
+  }
+
   .footer-nav {
-    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer-nav li{
     display: block;
-    bottom: 1rem;
   }
   .copyright-footer {
     bottom: 0;
+  }
+  .footer-redes{
+    width: 2rem;
+    display: block;
+    padding-right: 0;
   }
 }
 
 
 @media(max-width: 600px){
-
-  body{
+.body{
     min-height: 100%;
     display: grid;
     grid-template: 
@@ -216,7 +257,6 @@ main{
   .logo-contenedor, .toggle_btn{
     text-align: center;
     padding: 15px 10px;
-
   }
 
   .dropdown_menu{
@@ -236,14 +276,7 @@ main{
   /* -----------------MAIN----------------- */
 
   /* -----------------FOOTER----------------- */
-  .footer-logo {
-    padding-left: 0;
-  }
-  
-  .footer-nav{
-    position: absolute;
-    bottom: 1rem;
-  }
+ 
 
   .footer-nav li{
     display: block;
@@ -255,11 +288,4 @@ main{
     display: block;
     padding-right: 0;
   }
-
-  .copyright-footer{
-    position: fixed;
-    bottom: 0;
-    height: 1rem;
-  }
-  
 }
