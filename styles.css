@@ -155,8 +155,8 @@ main{
   width: 100%;
   justify-content:space-between;
   align-items: center;
- 
 }
+
 .footer-logo {
   flex: 1;
   position: absolute;
@@ -168,7 +168,6 @@ main{
   flex: 1;
   display:flex;
   justify-content: center;
-  box-sizing: border-box;
 }
 
 .footer-nav li{
