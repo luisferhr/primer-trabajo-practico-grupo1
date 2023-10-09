@@ -31,7 +31,46 @@
   </ul>
   </header>
   <main class="main main-contacto">
-     
+    <section class="box1-descrip-form">
+      <h2>¿Tienes alguna duda? ¡Contáctame!</h2>
+      <p>Hola, encantado de poder atenderte y responder tus dudas, llena este formulario y te responderé en la brevedad posible.
+      </p>
+      <form id="miFormularioContacto" action="" method="post">
+        <h4 class="etiqueta-form">Datos de Contacto:</h4>
+        <div class="item-form primeros-items">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="item-form primeros-items">
+          <label for="telefono">Telefono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div class="item-form primeros-items">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="item-form primeros-items">
+          <label for="adunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" required>
+        </div>
+        <h4 class="etiqueta-form">Breve Descripcion:</h4>
+        <div class="item-form segundos-items textarea-cotiza">
+          <textarea name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
+        </div>
+        <h5 class="campo-requerido">* Campo requerido</h5>
+        <div class="item-form button-cotiza">
+          <input type="submit" value="Enviar">
+        </div>
+      </form>
+    </section>
+    <section class="box-maps">
+      <h3>También puedes encontrarme en esta dirección</h3>
+      <div class="ubicacion">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888186305!2d-58.38414532349667!3d-34.60373445750053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2scl!4v1696864172947!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+
   </main>
   <footer class="footer">
     <div class="logo-footer">
@@ -60,5 +99,6 @@
   </footer>
 
 <script src="./header.js"></script>
+<script src="./contacto.js"></script>
 </body>
 </html>

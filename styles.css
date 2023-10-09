@@ -341,6 +341,141 @@ main{
   font-size: 25px;
 }
 
+/* -----------------MAIN COTIZA--------------------- */
+
+.box1-descrip-form, .box2-informacion{
+  color: #D9D9D9;
+}
+
+.main-cotiza{
+  padding: 50px 100px;
+  display: flex;
+  gap: 40px;
+}
+
+.box1-descrip-form h2{
+  color: #ECB935;
+  font-family: 'Merienda';
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.box1-descrip-form{
+  flex: 1;
+}
+
+.box1-descrip-form p{
+  font-family: 'Livvic';
+  font-size: 20px;
+}
+
+.box1-descrip-form *{
+  font-family: 'Livvic';
+  font-size: 16px;
+}
+
+form div{
+  padding: 2px;
+}
+
+.etiqueta-form{
+  margin: 25px 0;
+  font-family: 'Merienda'
+}
+
+.primeros-items{
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.segundos-items{
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textarea-cotiza{
+  display: grid;
+}
+
+.textarea-cotiza textarea{
+  width: 380px;
+  resize: none;
+}
+
+.item-form-radiob > :first-child{
+  margin-right: 10px;
+}
+
+.campo-requerido{
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.button-cotiza input{
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.box2-informacion{
+  flex: 1;
+  align-self: center;
+  font-family: 'Livvic';
+}
+
+.box2-informacion h3{
+  font-family: 'Merienda';
+  color: #ecb935;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* -----------------MAIN CONTACTO--------------------- */
+
+.box1-descrip-form, .box2-informacion{
+  color: #D9D9D9;
+}
+
+.main-contacto{
+  padding: 90px 100px;
+  display: flex;
+  gap: 40px;
+}
+
+.main-contacto > :first-child{
+  flex: 1;
+}
+
+.main-contacto > :nth-child(2){
+  flex: 1;
+  height: 100%;
+  color: #ECB935;
+  font-family: 'Merienda';
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main-contacto > :nth-child(2) > h3{
+  color: #ECB935;
+  font-family: 'Merienda';
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ubicacion{
+  width: 100%;
+  height: calc(100% - 120px);
+}
+
+.ubicacion > iframe{
+  width: 100%;
+  height: 100%;
+}
+
 /* -----------------FOOTER----------------- */
 footer{
   grid-area: footer;
