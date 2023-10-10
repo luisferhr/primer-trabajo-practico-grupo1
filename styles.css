@@ -124,7 +124,14 @@ main{
 
 .main-fotos4 img{ 
   width: 24%;
+  filter: grayscale(100%);
+  transition: filter 1.5s;
 }
+
+.main-fotos4 img:hover{ 
+  filter: grayscale(0%);
+}
+
 .agend-container{
   margin: 50px 320px;
   display: flex;
