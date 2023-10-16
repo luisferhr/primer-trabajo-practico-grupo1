@@ -482,17 +482,17 @@ form div{
 .introduccion{
   text-decoration: none;
   color: #e9be50e4;
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: 'Merienda', cursive;
-  font-size: 18px;
   padding: 2%;
+  text-align: justify;
 }
 
 .cursos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-  margin: 1%;
+  grid-gap: 2rem;
+  padding: 2%;
 }
 
 .curso {
@@ -531,7 +531,7 @@ form div{
 }
 
 .botoncurso {
-  background-color: #ffc400; 
+  background-color: #1a0079; 
   color: #000000; 
   padding: 10px 20px; 
   border: none; 
@@ -566,14 +566,12 @@ footer{
   justify-content: center;
   align-items: center;
   height: 50%;
- 
 }
 
 .footer-nav ul{
   list-style: none;
   padding: 0;
   text-align: center;
-  
 }
 
 .footer-nav li{
@@ -593,6 +591,7 @@ footer{
 .footer-nav a:hover {
   font-size: 1.3rem;
   transition: ease 0.2s;
+  color: #ECB935;
 }
 
 .footer-redes{
@@ -606,6 +605,7 @@ footer{
 .footer-redes img:hover{
   width: 110%;
   transition: ease 0.2s;
+  filter: brightness(70%);
 }
 
 .copyright-footer {
@@ -631,8 +631,10 @@ footer{
   /* -----------------MAIN----------------- */
 
   /* --------------------INDEX---------------------- */
-
-
+  /* --------------------CURSOS---------------------- */
+  .textoCursos{
+    font-size: 1rem;
+  }
   /* -----------------FOOTER----------------- */
 
 }
@@ -676,9 +678,31 @@ footer{
   /* -----------------MAIN----------------- */
 
     /* -----------------CURSOS----------------- */
+  .introduccion{
+    padding: 2%;
+    margin: 2%;
+  }
+  .cursos{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imgcursos{
+    width: 20rem; 
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .textoCursos{
     font-size: 1rem;
+    text-align: left;
   }
+
   .botoncurso{
     font-size: 0.8rem;
   }
@@ -700,26 +724,29 @@ footer{
   .footer-nav li{
     display: block;
     justify-content: center;
-    padding: 0.1rem;
+    padding: 0;
   }
 
   .footer-redes{
     display: block;
-    right: 0;
+    position: absolute;
+    right: 0rem;
     height: auto;
     width: 2rem;
-    margin: 1rem;
+    
   }
 
   .copyright-footer{ 
-    display: block;
-    font-size: small;
-    position: absolute;
-    bottom: 0.5rem;
+    display: inline;
+    position: relative;
+    bottom: 1rem;
+    font-size: 0.6rem;
   }
+
+
   .footer-nav a:hover {
     font-size: 1.2rem;
     transition: ease 0.2s;
+    color: #ECB935;
   }
-
 }
