@@ -521,6 +521,17 @@ form div{
   transition: opacity 0.3s ease;
 }
 
+.info{
+  color: rgb(0, 0, 0);
+  background-color: rgba(240, 240, 240, 0.363);
+  border-radius: 1rem;
+  position: absolute;
+  z-index: 1;
+  padding: 1rem;
+  bottom: 25%;
+  display: none;
+}
+
 .curso:hover .imgcursos {
   filter: grayscale(0%);
   transition: filter 0.5s;
@@ -534,6 +545,7 @@ form div{
   background-color: #1a0079; 
   color: #000000; 
   padding: 10px 20px; 
+  margin-top: 10px;
   border: none; 
   border-radius: 0.5rem; 
   cursor: pointer; 
