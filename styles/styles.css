@@ -633,7 +633,6 @@ footer{
   grid-column: 2;
   color: #D9D9D9;
 }
-
 /* -------------------------------RESPONSIVE------------------------------- */
 
 @media(max-width: 1000px){
@@ -685,7 +684,6 @@ footer{
   .botoncurso{
     font-size: 0.8rem;
   }
-
   /* -----------------FOOTER----------------- */
 
 }
@@ -728,8 +726,8 @@ footer{
   }
   /* -----------------MAIN----------------- */
 
-    /* -----------------CURSOS----------------- */
-  .introduccion{
+   /* -----------------CURSOS----------------- */
+   .introduccion{
     padding: 2%;
     margin: 2%;
     font-size:  1rem;
