@@ -523,7 +523,7 @@ form div{
 
 .info{
   color: rgb(0, 0, 0);
-  background-color: rgba(240, 240, 240, 0.363);
+  background-color: rgba(240, 240, 240, 0.712);
   border-radius: 1rem;
   position: absolute;
   font-family: Livvic;
@@ -533,6 +533,13 @@ form div{
   display: none;
 }
 
+.info > a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff7300;
+  display: block;
+  text-align: right;
+}
 
 .curso:hover .imgcursos {
   filter: grayscale(0%);
