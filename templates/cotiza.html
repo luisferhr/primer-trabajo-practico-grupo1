@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirios Tattoo - Cotiza</title>
+    <link rel="shortcut icon" href="../images/icons/logo-footer.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+    </header>
+
+    <main class="main main-cotiza">
+        <section class="box1-descrip-form">
+            <h2>Cotiza el tatuaje que quieres</h2>
+            <p>Hola, para mí es un gusto que quieras realizar tu tatuaje conmigo y para poder responderte y atenderte de
+                manera más rápida solo debes llenar esta información que me será muy útil para cotizar.</p>
+            <form id="miFormulario" action="" method="post">
+                <h4 class="etiqueta-form">Datos de Contacto:</h4>
+                <div class="item-form primeros-items">
+                    <label for="nombre">Nombre*:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="item-form primeros-items">
+                    <label for="edad">Edad*:</label>
+                    <input type="number" id="edad" name="edad" required>
+                </div>
+                <div class="item-form primeros-items">
+                    <label for="telefono">Telefono*:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="item-form primeros-items">
+                    <label for="email">Email*:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <h4 class="etiqueta-form">Para tu tatuaje necesito que me indiques:</h4>
+                <div class="item-form segundos-items">
+                    <label for="zona">Zona del Cuerpo a Tatuar*:</label>
+                    <input type="text" id="zona" name="zona" required>
+                </div>
+                <div class="item-form segundos-items">
+                    <label for="tamano">Tamaño del tatuaje en cm.*:</label>
+                    <input type="number" id="tamano" name="tamano" required>
+                </div>
+                <div class="item-form segundos-items textarea-cotiza">
+                    <label for="descripcion">Descripción*:</label>
+                    <textarea name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
+                </div>
+                <h4 class="etiqueta-form">Tipo de Tatuaje:</h4>
+                <div class="item-form">
+                    <div class="item-form-radiob">
+                        <input type="radio" id="b-g" name="opcion" checked>
+                        <label for="b-g">Black & Gray:</label>
+                    </div>
+                    <div class="item-form-radiob">
+                        <input type="radio" id="detallesColor" name="opcion">
+                        <label for="detallesColor">Detalles en Color:</label>
+                    </div>
+                    <div class="item-form-radiob">
+                        <input type="radio" id="color" name="opcion">
+                        <label for="color">Full Color:</label>
+                    </div>
+                </div>
+                <h5 class="campo-requerido">* Campo requerido</h5>
+                <div class="item-form button-cotiza">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <section class="box2-informacion">
+            <h3>Lo que debes saber</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Et vivamus tellus non dui tortor volutpat enim arcu. In donec
+                ante morbi non hendrerit convallis. </br></br>
+                Pellentesque amet ut elit euismod. Sagittis est rutrum tincidunt volutpat enim venenatis. Augue libero
+                eu nam pretium vitae. </br></br>
+                Ornare felis at feugiat et adipiscing lacus tempus. Mollis malesuada eget amet feugiat faucibus habitant
+                arcu. Arcu tristique aliquam p ulvinar cursus vel quam felis suspendisse.</br></br>
+                Sapien malesuada dui ultricies porttitor fusce gravida morbi. Volutpat libero risus pellentesque viverra
+                turpis quis. Sociis at magna augue ornare. </br></br>
+                Lorem lectus velit dictum in tellus. Amet viverra et cras sem venenatis nisl integer. Lobortis dignissim
+                id amet dolor.</br></br>
+                Purus et volutpat massa sed amet. Morbi ipsum ut proin condimentum at. </p>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+    </footer>
+
+    <script src="../libs/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/footer.js"></script>
+    <script src="../scripts/cotiza/cotiza.js"></script>
+</body>
+
+</html>
