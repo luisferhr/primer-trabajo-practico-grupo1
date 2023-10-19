@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&family=Merienda:wght@300;400;700;800&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -65,10 +67,6 @@ header{
   cursor: pointer;
   display: none;
 }
-.main {
-  grid-area: main;
-  background-color: #f5f5f5;
-}
 
 /* Dropdown menu */
 .dropdown_menu{
@@ -98,13 +96,448 @@ header{
 /* -----------------MAIN - INDEX----------------- */
 main{
   grid-area: main;
-  background-color: aqua;
+  background-color: rgb(25, 25, 25);
+  width: 100%;
+}
+
+.principal-container{
+  width: auto;
+  height: 448px; 
+  margin: 50px 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-principal-container{
+  width: 330px;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.titulo-img-principal{
+  font-family: 'Merienda';
+  color: #ECB935;
+  text-align: center;
+  font-size: 40px;
+}
+
+.parrafo-img-main{
+  font-family: 'Livvic';
+  color: antiquewhite;
+  text-align: justify;
+  font-size: 20px;
+} 
+
+.carousel-container{
+  margin: 0 auto;
+  padding: 0 50px;
+  min-width: 300px;
+  max-width: 1000px;
+}
+
+.agend-container{
+  margin: 50px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parrafo-agenda{
+  font-family: Merienda;
+  margin-right: 50px;
+  font-size: 20px;
+  color: #D9D9D9;
+}
+
+.btn-agendar{
+  font-family: 'Livvic', sans-serif;
+  font-weight: bold;
+  padding: 18px 24px;
+  border-radius: 20px;
+  background-color: #ECB935;
+}
+
+/* -----------------MAIN - CONOCEME----------------- */
+
+.main-conoceme{
+  padding: 50px 100px;
+}
+
+.box1-conoceme{
+  display: flex;
+  margin-bottom: 50px;
+  color: #D9D9D9;
+  height: auto;
+  gap: 20px;
+}
+
+.box1-texto-conoceme{
+  flex: 1;
+}
+
+.box1-texto-conoceme h2{
+  font-family: 'Merienda';
+  font-weight: bold;
+  color: #ECB935;
+  font-size: 40px;
+}
+
+.box1-texto-conoceme p{
+  margin-top: 25px;
+  font-family: 'Livvic';
+  color: #D9D9D9;
+  font-size: 20px;
+}
+
+.box1-imagen-conoceme{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.box1-imagen-conoceme img{
+  width: 100%;
+}
+
+.box1-ideas-conoceme{
+  flex: 1;
+  text-align: center;
+}
+
+.box1-ideas-conoceme h2{
+  font-family: 'Merienda';
+  font-size: 24px;
+  color: #ECB935;
+  margin-bottom: 40px;
+}
+
+.box1-idea-imagenes{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.box1-idea-imagenes img{
+  max-width: 32%;
+  min-width: 115px;
+  margin-bottom: 10px;
+} 
+
+.box2-trabajos-agenda h2{
+  color: #ECB935;
+  font-family: 'Merienda';
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.box2-trabajos-imagenes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.box2-trabajos-imagenes img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.box2-agendar{
+  margin-top: 50px;
+  text-align: right;
+}
+
+.box2-btn-agendar{
+  font-family: 'Livvic', sans-serif;
+  font-weight: bold;
+  padding: 18px 24px;
+  border-radius: 20px;
+  background-color: #ECB935;
+}
+
+/* -----------------MAIN - PROMOCIONES ----------------- */
+
+.main-promociones{
+  padding: 50px 100px;
+}
+
+.box1-promociones{
+  display: flex;
+  margin-bottom: 50px;
+  color: #D9D9D9;
+  height: 470px;
+  gap: 20px;
+}
+
+.box1-texto-promociones{
+  flex: 1;
+}
+
+.box1-texto-promociones h2{
+  font-family: 'Merienda';
+  font-weight: bold;
+  color: #ECB935;
+  font-size: 40px;
+}
+
+.box1-texto-promociones p, .box1-ideas-promociones p{
+  margin-top: 25px;
+  font-family: 'Livvic';
+  color: #D9D9D9;
+  font-size: 20px;
+}
+
+.box1-imagen-promociones{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.box1-ideas-promociones{
+  flex: 1;
+}
+
+.box1-ideas-promociones h2{
+  font-family: 'Merienda';
+  font-size: 24px;
+  color: #ECB935;
+  margin-bottom: 40px;
+}
+
+.box2-promociones-agenda{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.promocion{
+  flex: 1;
+}
+.promocion img{
+  width: 100%;
+}
+
+.promocion h2{
+  font-family: 'Merienda';
+  font-size: 24px;
+  color: #ECB935;
+  margin: 19px 0 16px 0;
+}
+
+.promocion p{
+  font-family: 'Livvic';
+  color: #D9D9D9;
+  font-size: 25px;
+}
+
+/* -----------------MAIN COTIZA--------------------- */
+
+.box1-descrip-form, .box2-informacion{
+  color: #D9D9D9;
+}
+
+.main-cotiza{
+  padding: 50px 100px;
+  display: flex;
+  gap: 40px;
+}
+
+.box1-descrip-form h2{
+  color: #ECB935;
+  font-family: 'Merienda';
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+
+.box1-descrip-form{
+  flex: 1;
+}
+
+.box1-descrip-form p{
+  font-family: 'Livvic';
+  font-size: 20px;
+}
+
+.box1-descrip-form *{
+  font-family: 'Livvic';
+  font-size: 16px;
+}
+
+form div{
+  padding: 2px;
+}
+
+.etiqueta-form{
+  margin: 25px 0;
+  font-family: 'Merienda'
+}
+
+.primeros-items{
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.segundos-items{
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textarea-cotiza{
+  display: grid;
+}
+
+.textarea-cotiza textarea{
+  width: 380px;
+  resize: none;
+}
+
+.item-form-radiob > :first-child{
+  margin-right: 10px;
+}
+
+.campo-requerido{
+  font-weight: 400;
+  margin: 30px 0;
+}
+
+.button-cotiza input{
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.box2-informacion{
+  flex: 1;
+  align-self: center;
+  font-family: 'Livvic';
+}
+
+.box2-informacion h3{
+  font-family: 'Merienda';
+  color: #ecb935;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* -----------------MAIN CONTACTO--------------------- */
+
+.box1-descrip-form, .box2-informacion{
+  color: #D9D9D9;
+}
+
+.main-contacto{
+  padding: 90px 100px;
+  display: flex;
+  gap: 40px;
+}
+
+.main-contacto > :first-child{
+  flex: 1;
+}
+
+.main-contacto > :nth-child(2){
+  flex: 1;
+  height: 100%;
+  color: #ECB935;
+  font-family: 'Merienda';
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.main-contacto > :nth-child(2) > h3{
+  color: #ECB935;
+  font-family: 'Merienda';
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ubicacion{
+  width: 100%;
+  height: calc(100% - 120px);
+}
+
+.ubicacion > iframe{
+  width: 100%;
+  height: 100%;
 }
 
 /* -----------------FOOTER----------------- */
-.footer{
+footer{
   grid-area: footer;
-  background-color: #0d0c0c5b;
+  background-color: #0D0C0C;
+  display: flex;
+  padding: 0 6.25rem;
+  align-items: center;
+}
+
+.logo-footer{
+  flex: 1;
+}
+
+.logo-footer-mobile{
+  display: none;
+}
+
+.cont-footer{
+  flex: 1;
+  color: #D9D9D966;
+  font-family: 'Livvic', sans-serif;
+}
+
+.lista-footer{
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.link-footer{
+  text-decoration: none;
+  color: #D9D9D966; 
+}
+
+.parrafo-footer{
+  text-align: center;
+}
+
+.link-footer{
+  font-size: 1.15rem;
+}
+
+.icons-rrss{
+  flex: 1;
+}
+
+.list-incos{
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.fa-brands{
+  color: #ECB935;
+  padding: 0.5rem;
+  border: 2px solid;
+  border-radius: 3.15rem;
+  font-size: 1.55rem;
+}
+
+.fa-brands:hover{
+  font-size: 2rem;
 }
 
 /* -------------------------------RESPONSIVE------------------------------- */
@@ -129,12 +562,51 @@ main{
 
   /* -----------------FOOTER----------------- */
 
+  footer{
+    padding: 0 1rem;
+  }
+
+  .logo-footer-mobile{
+    display: block;
+    flex: 1;
+  }
+
+  .logo-footer{
+    display: none;
+  }
+
+  .cont-footer{
+    flex: 1;
+  }
+
+  .parrafo-footer{
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .lista-footer{
+    display: none;
+  }
+
+  .icons-rrss{
+    flex: 1;
+  }
+
+  .list-incos{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  .fa-brands{
+    font-size: 1rem;
+  }
+
 }
 
+@media(max-width: 480px){
 
-@media(max-width: 600px){
-
-  body{
+  body{  
     min-height: 100%;
     display: grid;
     grid-template: 
@@ -150,7 +622,7 @@ main{
 
   .logo-contenedor, .toggle_btn{
     text-align: center;
-    padding: 15px 10px;
+    padding: 1rem 0.63rem;
 
   }
 
@@ -166,13 +638,13 @@ main{
   .dropdown_menu li:hover a{
     font-size: 1.3rem;
   }
-
-
   /* -----------------MAIN----------------- */
 
 
 
   /* -----------------FOOTER----------------- */
 
-  
+  .fa-brands{
+    font-size: 1rem;
+  }
 }

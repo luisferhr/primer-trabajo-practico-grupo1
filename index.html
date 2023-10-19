@@ -12,7 +12,7 @@
 <body>
   <header class="header"> 
     <nav class="navbar">
-      <div class="logo-contenedor"><a href="link-logo"><img class="logo" src="./logo.png" alt=""></a></div>
+      <div class="logo-contenedor"><a href="./index.html"><img class="logo" src="./logo.png" alt=""></a></div>
       <ul class="nav-list">
           <li class="enlace-opcion"><a class="link-opcion" href="./conoceme.html">Conoceme</a></li>
           <li class="enlace-opcion"><a class="link-opcion" href="./promociones.html">Promociones</a></li>
@@ -31,11 +31,72 @@
       <li class="enlace-opcion"><a class="link-opcion" href="./contacto.html">Contacto</a></li>
   </ul>
   </header>
-  <main class="main">MAIN</main>
-  <footer class="footer">FOOTER</footer>
-
-<script src="./header.js"></script>
+  <main class="main">
+    <div class="principal-container">
+      <img src="./fotos tp/inamgep.jpg" alt="" class="main-img">
+      <div class="texto-principal-container">
+        <h2 class="titulo-img-principal">No esperes más por ese tatuaje</h2>
+        <p class="parrafo-img-main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla vitae, inventore eius quasi alias doloremque ipsum similique voluptate nam aut culpa dolores fugiat, soluta, nobis facilis. Aliquid, quas! Iste, esse.</p>
+      </div> 
+    </div>
+      <div class="carousel-container">
+        <div class="m-custom text-center ">
+          <div id="carouselExampleInterval" class="carousel slide custom-carousel mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./fotos tp/ideas.jpg" class="d-block w-100 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./fotos tp/ideas.jpg" class="d-block w-100 img-fluid" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./fotos tp/ideas.jpg" class="d-block w-100 img-fluid" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    <div class="agend-container">
+      <p class="parrafo-agenda">Agenda tu hora y vive la experiencia de tatuarte lo que quieres...</p>
+      <button class="btn-agendar" id="btn-agendar">Agendar</button>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="logo-footer">
+      <a href="link-logo"><img class="logo" src="./logo.png" alt=""></a>
+    </div>
+    <div class="logo-footer-mobile">
+      <a href="link-logo"><img class="logo" src="./logo-footer.svg" alt=""></a>
+    </div>
+    <div class="cont-footer">
+      <ul class="lista-footer">
+        <li class="item-footer"><a href="#" class="link-footer">Conoceme</a></li>
+        <li class="item-footer"><a href="#" class="link-footer">Promociones</a></li>
+        <li class="item-footer"><a href="#" class="link-footer">Cotiza</a></li>
+        <li class="item-footer"><a href="#" class="link-footer">Contacto</a></li>
+      </ul>
+      <p class="parrafo-footer">&copy 2023. Sirios Tattoo. Chile</p>
+    </div>
+    <div class="icons-rrss">
+      <ul class="list-incos">
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </ul>  
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="./header.js"></script>
+  <script src="./btn-agendar.js"></script>
 </body>
 </html>
-
-        

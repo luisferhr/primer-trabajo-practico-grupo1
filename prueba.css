@@ -104,8 +104,4 @@ header {
     }
 }
 
-/* @media(max-width: 576px) {
-    .menu-toggle:checked + .menu-btn + nav{
-        width: 100%;
-    }
-} */
+
