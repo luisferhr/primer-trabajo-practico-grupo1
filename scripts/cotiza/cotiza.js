@@ -1,9 +1,21 @@
 formulario = document.getElementById("miFormulario")
 
+function validarNumeroTelefono(numero) {
+    // Define una expresión regular que coincide con un número de teléfono en formato (123) 456-7890
+    var regex = /^\d{9}$/;
+
+    // Usamos el método test de la expresión regular para verificar si el número coincide
+    if (regex.test(numero)) {
+        return true; // El número de teléfono es válido
+    } else {
+        return false; // El número de teléfono no es válido
+    }
+}
+
 function esEmailValido(email) {
     const regexEmail = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     return regexEmail.test(email);
-  }
+}
 
 formulario.addEventListener("submit", function(event){
 
@@ -30,7 +42,7 @@ formulario.addEventListener("submit", function(event){
 
     if (nombre.value.length >= 3) {
         if (edad.value >= 18) {
-            if (telefono.value.length === 9) {
+            if (validarNumeroTelefono(telefono.value)) {
                 if (esEmailValido(email.value)) {
                     if (zona.value.length >= 5) {
                         if (tipo.length > 1) {
@@ -38,7 +50,7 @@ formulario.addEventListener("submit", function(event){
                             console.log("Edad: " + edad.value);
                             console.log("Telefono: " + telefono.value);
                             console.log("Email: " + email.value);
-                            console.log("Zona: " + zona.value);
+                            console.log("Zona: " + zona.value); 
                             console.log("Tamaño: " + tamano + " cm");
                             console.log("Descripcion: " + descripcion.value);
                             console.log("Tipo de Tatuaje: " + tipo);

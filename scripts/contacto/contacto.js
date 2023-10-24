@@ -1,32 +1,72 @@
 miFormularioContacto = document.getElementById("miFormularioContacto")
 
+function validarNumeroTelefono(numero) {
+    // Define una expresión regular que coincide con un número de teléfono en formato (123) 456-7890
+    var regex = /^\d{9}$/;
+
+    // Usamos el método test de la expresión regular para verificar si el número coincide
+    if (regex.test(numero)) {
+        return true; // El número de teléfono es válido
+    } else {
+        return false; // El número de teléfono no es válido
+    }
+}
+
+function esEmailValido(email) {
+    const regexEmail = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+    return regexEmail.test(email);
+}
+
 miFormularioContacto.addEventListener("submit", function(event){
 
     event.preventDefault();
 
-    let nombre = document.getElementById("nombre").value;
-    let telefono = document.getElementById("telefono").value;
-    let email = document.getElementById("email").value;
-    let asunto = document.getElementById("asunto").value;
-    let descripcion = document.getElementById('descripcion').value;
+    let nombre = document.getElementById("nombre"); 
+    let telefono = document.getElementById("telefono");
+    let email = document.getElementById("email");
+    let asunto = document.getElementById("asunto");
+    let descripcion = document.getElementById('descripcion');
 
-    console.log("Nombre: " + nombre);
-    console.log("Apellido: " + telefono);
-    console.log("Email: " + email);
-    console.log("Asunto: " + asunto);
-    console.log("Descripcion: " + descripcion)
+    if(nombre.value.length >= 3){
+        if(validarNumeroTelefono(telefono.value)){
+            if(esEmailValido(email.value)){
+                if(asunto.value.length >= 5){
+                    if(descripcion.value.length >= 5){
+                        console.log("Nombre: " + nombre.value);
+                        console.log("Apellido: " + telefono.value);
+                        console.log("Email: " + email.value);
+                        console.log("Asunto: " + asunto.value);
+                        console.log("Descripcion: " + descripcion.value)
+                    
+                        miFormularioContacto.reset();
+                    }
+                    else{
+                        alert('Complete campo Descripcion. ')
+                        descripcion.focus()
+                    }
 
-    let datosContacto = {
-        nombre: nombre,
-        telefono: telefono,
-        email: email,
-        asunto: asunto,
-        descripcion: descripcion
-    };
+                }
+                else{
+                    alert('Describa el asunto.')
+                    asunto.focus()
+                }
 
-    let datosContactoJSON = JSON.stringify(datosContacto);
+            }
+            else {
+                alert('Describa un email valido')
+                email.focus()
+            }
 
-    miFormularioContacto.reset();
+        }
+        else{
+            alert('Describa un numero telefonico correcto. (9 digitos) 912345678')
+        }
+    }
+    else{
+        alert('Ingrese su nombre')
+        nombre.focus()
+    }
+    
 })
 
 
