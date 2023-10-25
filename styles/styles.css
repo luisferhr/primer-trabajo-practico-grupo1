@@ -479,13 +479,21 @@ form div{
 }
 /* -----------------MAIN CURSOS---------------- */
 
-.introduccion{
-  text-decoration: none;
+.titulocurso{
   color: #e9be50e4;
   font-size: 2rem;
   font-family: 'Merienda', cursive;
   padding: 2%;
+  text-align: center;
+}
+
+.introduccion {
+  margin-top: 25px;
+  font-family: 'Livvic';
+  color: #D9D9D9;
+  font-size: 20px;
   text-align: justify;
+  padding: 2%;
 }
 
 .cursos {
