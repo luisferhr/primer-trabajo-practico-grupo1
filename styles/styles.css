@@ -2,10 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,400;0,700;1,100;1,200;1,400;1,700&family=Merienda:wght@300;400;700;800&display=swap');
 
 
-* {
+*, ul {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+li{
+  list-style: none;
 }
 
 html {
@@ -14,7 +23,6 @@ html {
 }
 
 body{
-  
   min-height: 100%;
   display: grid;
   grid-template: 
@@ -33,6 +41,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  z-index: 1;
 }
 
 .logo a img{
@@ -85,7 +97,6 @@ main{
   background-image: url('../images/photos/inamgep.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   height: 448px; 
   margin: 50px 100px;
 }
@@ -115,6 +126,10 @@ main{
   padding: 0 50px;
   min-width: 300px;
   max-width: 1000px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  background-color: #000000;
 }
 
 
@@ -206,6 +221,11 @@ main{
   margin-bottom: 10px;
 } 
 
+.box2-trabajos-agenda{
+  display: flex;
+  flex-direction: column;
+}
+
 .box2-trabajos-agenda h2{
   color: #ECB935;
   font-family: 'Merienda';
@@ -225,9 +245,9 @@ main{
   object-fit: cover;
 }
 
-.box2-agendar{
-  margin-top: 50px;
-  text-align: right;
+.box2-trabajos-agenda .box2-agendar{
+  align-self: end;
+  margin-top: 60px;
 }
 
 .box2-btn-agendar{
@@ -248,7 +268,6 @@ main{
   display: flex;
   margin-bottom: 50px;
   color: #D9D9D9;
-  height: 470px;
   gap: 20px;
 }
 
@@ -276,6 +295,17 @@ main{
   justify-content: center;
 }
 
+.box1-imagen-promociones img{
+  width: 100%;
+  height: auto;
+  filter: grayscale(100);
+  transition: 1s;
+}
+
+.box1-imagen-promociones img:hover{
+  filter: none;
+}
+
 .box1-ideas-promociones{
   flex: 1;
 }
@@ -291,7 +321,6 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   gap: 100px;
 }
 
@@ -313,6 +342,10 @@ main{
   font-family: 'Livvic';
   color: #D9D9D9;
   font-size: 25px;
+}
+
+.box2-agendar{
+  align-self: center;
 }
 
 /* -----------------MAIN COTIZA--------------------- */
@@ -390,6 +423,9 @@ form div{
 .button-cotiza input{
   border-radius: 20px;
   padding: 8px 16px;
+  background-color: #ECB935;
+  font-family: 'Livvic', sans-serif;
+  font-weight: bold;
 }
 
 .box2-informacion{
@@ -543,7 +579,7 @@ form div{
   transition-duration: 0.5ms;
 }
 /* -----------------FOOTER----------------- */
-footer{
+/* footer{
   grid-area: footer;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -604,10 +640,81 @@ footer{
 .copyright-footer {
   grid-column: 2;
   color: #D9D9D9;
+} */
+
+footer{
+  grid-area: footer;
+  background-color: #0D0C0C;
+  display: flex;
+  padding: 0 6.25rem;
+  align-items: center;
 }
+
+.logo-footer{
+  flex: 1;
+}
+
+.logo-foot{
+  height: 80px;
+}
+
+.logo-mobile{
+  display: none;
+  height: 80px;
+}
+
+.cont-footer{
+  flex: 3;
+  color: #D9D9D966;
+  font-family: 'Livvic', sans-serif;
+}
+
+.lista-footer{
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+}
+
+.link-footer{
+  text-decoration: none;
+  color: #D9D9D966; 
+}
+
+.parrafo-footer{
+  text-align: center;
+}
+
+.link-footer{
+  font-size: 1.15rem;
+}
+
+.icons-rrss{
+  flex: 1;
+}
+
+.list-icons{
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.fa-brands{
+  color: #ECB935;
+  padding: 0.5rem;
+  border: 2px solid;
+  border-radius: 3.15rem;
+  font-size: 1.55rem;
+  transition: 0.35s;
+}
+
+.fa-brands:hover{
+  transform: scale(1.05);
+}
+
 /* -------------------------------RESPONSIVE------------------------------- */
 
-@media(max-width: 1000px){
+@media(max-width: 1024px){   /*TABLET*/
   /* -----------------HEADER----------------- */
   header{
     padding: 0 50px;
@@ -621,10 +728,10 @@ nav{
     position: absolute;
     top: 120px;
     right: 0;
-    background-color: #333;
+    background-color: #0d0c0cf3;
     opacity: 0; /* Opacidad inicial en 0 */
     visibility: hidden; /* Oculta el elemento */
-    transition: opacity 0.15s, visibility 0.15s
+    transition:  0.15s;
   }
 
   .nav-links{
@@ -635,7 +742,7 @@ nav{
 
   .nav-links li{
       margin: 0;
-      padding: 20px 40px;
+      padding: 20px 60px;
       text-align: center;
   }
 
@@ -657,9 +764,85 @@ nav{
   }
   /* -----------------MAIN----------------- */
 
-  /* --------------------INDEX---------------------- */
+  /*--------------------CONOCEME--------------------*/
+
+  .box1-conoceme{
+    flex-direction: column;
+  }
+
+  .box1-texto-conoceme h2{
+    text-align: center;
+  }
+
+  .box1-texto-conoceme p{
+    text-align: justify;
+  }
+  
+  .box1-imagen-conoceme img{
+    padding: 20px;
+    width: 60%;
+  }
+
+  /*--------------------PROMOCIONES--------------------*/
+
+  .box1-promociones{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box1-texto-promociones h2{
+    text-align: center;
+  }
+
+  .box1-texto-promociones p, .box1-ideas-promociones p {
+    text-align: justify;
+  }
+
+  .box1-imagen-promociones img{
+    width: 60%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .box1-ideas-promociones h2{
+    text-align: center;
+  }
+
+  .box2-promociones-agenda{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+
+  .promocion{
+    border: 1px outset rgba(255, 255, 255, 0.100);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 15px 15px 15px 5px #000000;
+    transition: background .45s;
+  }
+
+  .promocion:hover{
+    background-color: #201f1f;
+  }
+
+  .promocion img{
+    border-radius: 15px;
+  }
+
+  .box2-agendar{
+    margin: 0 0 40px 0;
+    transition: .45s;
+  }
+
+  .box2-agendar:hover{
+    transform: scale(1.05);
+  }
+  
+
   /* --------------------CURSOS---------------------- */
-  .textoCursos{
+  /* .textoCursos{
     font-size: 1rem;
   }
   .introduccion{
@@ -690,15 +873,31 @@ nav{
 
   .botoncurso{
     font-size: 0.8rem;
-  }
+  } */
   /* -----------------FOOTER----------------- */
+  footer{
+    padding: 0 50px;
+  }
+
+  .logo-foot{
+    display: none;
+  }
+  
+  .logo-mobile{
+    display: block;
+    margin: auto;
+  }
+
+  .list-icons{
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 10px;
+  }
 
 }
 
 
-
-
-@media(max-width: 600px){
+@media(max-width: 768px){ /*MOBILE*/
 .body{
     min-height: 100%;
     display: grid;
@@ -766,44 +965,4 @@ nav{
 
   /* -----------------FOOTER----------------- */
   
-  .footer{
-    margin: 0;
-    padding: 0;
-  }
-  .footer-logo{
-    height: 60%;
-  }
-  .footer-nav {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .footer-nav li{
-    display: block;
-    justify-content: center;
-    padding: 0;
-  }
-
-  .footer-redes{
-    display: block;
-    position: absolute;
-    right: 0rem;
-    height: auto;
-    width: 2rem;
-    
-  }
-
-  .copyright-footer{ 
-    display: inline;
-    position: relative;
-    bottom: 1rem;
-    font-size: 0.6rem;
-  }
-
-
-  .footer-nav a:hover {
-    font-size: 1.2rem;
-    transition: ease 0.2s;
-    color: #ECB935;
-  }
 }
