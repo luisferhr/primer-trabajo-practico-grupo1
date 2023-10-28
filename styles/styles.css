@@ -971,16 +971,16 @@ nav{
 
 
    /* -----------------CURSOS----------------- */
-  .introduccion{
+   .main-cursos{
+    padding: 50px;
+  }
+   .introduccion{
     padding: 2%;
-    margin: 2%;
     font-size:  1rem;
   }
   .cursos{
     display: flex;
     flex-direction: column;
-    margin: 2%;
-    padding: 2%;
     justify-content: space-between;
     align-items: center;
   }
