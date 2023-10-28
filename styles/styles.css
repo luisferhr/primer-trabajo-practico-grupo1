@@ -902,7 +902,7 @@ nav{
   /*-----------------MAIN INDEX-----------------*/
 
   .principal-container{
-    margin: 50px 0px;
+    margin: 0 0 50px;
     height: 400px;
   }
 
@@ -1035,6 +1035,27 @@ nav{
 
   .box2-informacion p{
     font-size: 18px;
+  }
+
+  .textarea-cotiza textarea{
+    width: 260px;
+  }
+
+  .segundos-items{
+    width: 260px;
+  }
+
+  .segundos-items{
+    display: grid;
+  }
+
+  .segundos-items input{
+    width: 260px;
+  }
+
+  /*---------------CONTACTO-----------------*/
+  .ubicacion{
+    height: 350px;
   }
 
   /* -----------------FOOTER----------------- */
