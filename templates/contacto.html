@@ -21,31 +21,31 @@
       <p>Hola, encantado de poder atenderte y responder tus dudas, llena este formulario y te responderé en la brevedad
         posible.
       </p>
-      <form id="miFormularioContacto" action="" method="post">
+      <form id="miFormularioContacto" action="https://formspree.io/f/xleyzvlb" method="post">
         <h4 class="etiqueta-form">Datos de Contacto:</h4>
         <div class="item-form primeros-items">
           <label for="nombre">Nombre*:</label>
-          <input type="text" id="nombre" name="nombre">
+          <input type="text" id="nombre" name="nombre" required>
         </div>
         <div class="item-form primeros-items">
           <label for="telefono">Telefono*:</label>
-          <input type="tel" id="telefono" name="telefono">
+          <input type="tel" id="telefono" name="telefono" required>
         </div>
         <div class="item-form primeros-items">
           <label for="email">Email*:</label>
-          <input type="email" id="email" name="email">
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="item-form primeros-items">
           <label for="adunto">Asunto*:</label>
-          <input type="text" id="asunto" name="asunto">
+          <input type="text" id="asunto" name="asunto" required>
         </div>
         <h4 class="etiqueta-form">Breve Descripcion*:</h4>
         <div class="item-form segundos-items textarea-cotiza">
-          <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+          <textarea name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
         </div>
         <h5 class="campo-requerido">* Campo requerido</h5>
         <div class="item-form button-cotiza">
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Enviar" required>
         </div>
       </form>
     </section>
