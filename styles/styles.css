@@ -28,7 +28,7 @@ body{
   grid-template: 
   'header' 120px
   'main' auto
-  'footer' 7.5rem;
+  'footer' 120px;
 }
 
 
@@ -66,6 +66,10 @@ header {
   color: #ECB935;
   font-family: 'Merienda';
   font-size: 20px;
+}
+
+.nav-links .activa{
+  color: white;
 }
 
 .nav-links a:hover{
@@ -225,12 +229,14 @@ main{
   max-width: 32%;
   min-width: 115px;
   margin-bottom: 10px;
-  transition: transform 0.5s; /* Transición para el efecto de zoom */
+  transition: 1s; 
+  transform: rotate(0deg);
   border: 1px solid rgba(0, 0, 0, 0.466)
 }
 
 .box1-idea-imagenes img:hover{
-  transform: scale(1.5); /* Aumenta el tamaño al doble */
+  z-index: 1;
+  transform: scale(1.5);
 }
 
 .box2-trabajos-agenda{
@@ -276,8 +282,6 @@ main{
   border-radius: 20px;
   background-color: #ECB935;
 }
-
-
 
 /* -----------------MAIN - PROMOCIONES ----------------- */
 
@@ -344,7 +348,19 @@ main{
 
 .promocion{
   flex: 1;
+  display: flex;
+  min-width: 210px;
+  flex-wrap: wrap;
   margin: 0 30px 50px;
+  border: 1px outset rgba(255, 255, 255, 0.100);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px 5px #000000;
+  transition: background .45s;
+}
+
+.promocion:hover{
+  background-color: #201f1f;
 }
 
 .promocion img{
@@ -479,7 +495,6 @@ form div{
   text-align: justify;
 }
 
-
 /* -----------------MAIN CONTACTO--------------------- */
 
 .box1-descrip-form, .box2-informacion{
@@ -560,27 +575,27 @@ form div{
 
 .textoCursos {
   background-color: rgba(240, 240, 240, 0.363);
-  border-radius: 1rem;
-  font-size: 2rem;
+  border-radius: 16px;
+  font-size: 32px;
   font-family: 'Merienda', cursive;
   font-weight:900;
   z-index: 1;
   position: absolute;
-  top: 0.5 rem;
-  padding: 1rem;
+  top: 8px;
+  padding: 16px;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .info{
   color: rgb(0, 0, 0);
+  text-align: justify;
   background-color: rgba(240, 240, 240, 0.712);
-  border-radius: 1rem;
+  border-radius: 16px;
   position: absolute;
-  font-family: Livvic;
-  font-size: 90%;
+  font-family: 'Livvic';
   z-index: 1;
-  padding: 1rem;
+  padding: 16px;
   bottom: 25%;
   display: none;
 }
@@ -636,7 +651,7 @@ footer{
   grid-area: footer;
   background-color: #0D0C0C;
   display: flex;
-  padding: 0 6.25rem;
+  padding: 0 100px;
   align-items: center;
 }
 
@@ -661,13 +676,13 @@ footer{
 
 .lista-footer{
   display: flex;
-  gap: 1.25rem;
+  gap: 20px;
   justify-content: center;
-  margin-bottom: 1.6rem;
+  margin-bottom: 25px;
 }
 
 .lista-footer a:hover {
-  font-size: 1.1rem;
+  font-size: 18px;
   transition: ease 0.2s;
   color: #ecb83596;
 }
@@ -682,7 +697,7 @@ footer{
 }
 
 .link-footer{
-  font-size: 1.15rem;
+  font-size: 18px;
 }
 
 .icons-rrss{
@@ -692,15 +707,15 @@ footer{
 .list-icons{
   display: flex;
   justify-content: end;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .fa-brands{
   color: #ECB935;
-  padding: 0.5rem;
+  padding: 8px;
   border: 2px solid;
-  border-radius: 3.15rem;
-  font-size: 1.55rem;
+  border-radius: 50px;
+  font-size: 25px;
   transition: 0.35s;
 }
 
@@ -820,16 +835,7 @@ nav{
   }
 
   .promocion{
-    border: 1px outset rgba(255, 255, 255, 0.100);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 15px 15px 15px 5px #000000;
-    transition: background .45s;
     margin-bottom: 35px;
-  }
-
-  .promocion:hover{
-    background-color: #201f1f;
   }
 
   .promocion img{
@@ -851,7 +857,6 @@ nav{
 
   .introduccion{
     font-size: 20px;
-    margin-bottom: 20px;
   }
 
   .cursos{
@@ -861,8 +866,8 @@ nav{
     align-items: center;
   }
   .imgcursos{
-    width: 20rem; 
-    height: 20rem;
+    width: 320px; 
+    height: 320px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -874,7 +879,7 @@ nav{
   }
 
   .botoncurso{
-    font-size: 0.8rem;
+    font-size: 12.5px;
   } 
 
   /*------------COTIZA--------------------*/
@@ -931,7 +936,6 @@ nav{
   }
 
 }
-
 
 @media(max-width: 768px){ /*MOBILE*/
 .body{
@@ -1006,14 +1010,12 @@ nav{
     border-radius: 16px;
   }
 
-
    /* -----------------CURSOS----------------- */
 
    .titulocurso{
     font-size: 30px;
    }
    .introduccion{
-    padding: 2%;
     font-size: 18px;
   }
   .cursos{
@@ -1030,12 +1032,17 @@ nav{
   }
 
   .textoCursos{
-    font-size: 1rem;
+    font-size: 16px;
     text-align: left;
   }
 
+  .info{
+    font-size: 14px;
+    bottom: 20%;
+  }
+
   .botoncurso{
-    font-size: 0.8rem;
+    font-size: 13px;
   }
 
   /*----------------PROMOCIONES--------------*/
@@ -1054,6 +1061,12 @@ nav{
 
   .box2-promociones-agenda{
     width: 100%;
+  }
+
+  .promocion{
+    margin: 0 0 35px 0;
+    max-width: 400px;
+    align-self: center;
   }
 
   .promocion h2{
