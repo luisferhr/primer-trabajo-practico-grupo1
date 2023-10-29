@@ -68,6 +68,10 @@ header {
   font-size: 20px;
 }
 
+.nav-links a:hover{
+  color: #ecb835b8;
+}
+
 /* Estilos para el menú hamburguesa */
 
 .menu-toggle{
@@ -94,9 +98,11 @@ main{
 }
 
 .principal-container{
-  background-image: url('../images/photos/inamgep.jpg');
+  background-image: url('../images/photos/fondo-index.jpeg');
   background-size: cover;
   background-position: center;
+  border: 1px solid rgba(255, 255, 255, 0.034);
+  box-shadow: 25px 13px 32px -11px rgba(0,0,0,0.75);
   height: 448px; 
   margin: 50px 100px;
 }
@@ -116,22 +122,21 @@ main{
 
 .parrafo-img-main{
   font-family: 'Livvic';
-  color: antiquewhite;
+  color: rgb(237, 253, 252);
   text-align: justify;
   font-size: 20px;
+  font-size: bold;
 } 
 
 .carousel-container{
   margin: 0 auto;
   padding: 0 50px;
-  min-width: 300px;
-  max-width: 1000px;
+  width: 60%;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
   background-color: #000000;
 }
-
 
 .agend-container{
   margin: 50px ;
@@ -166,7 +171,7 @@ main{
   margin-bottom: 50px;
   color: #D9D9D9;
   height: auto;
-  gap: 20px;
+  gap: 25px;
 }
 
 .box1-texto-conoceme{
@@ -185,6 +190,7 @@ main{
   font-family: 'Livvic';
   color: #D9D9D9;
   font-size: 20px;
+  text-align: justify;
 }
 
 .box1-imagen-conoceme{
@@ -258,6 +264,8 @@ main{
   background-color: #ECB935;
 }
 
+
+
 /* -----------------MAIN - PROMOCIONES ----------------- */
 
 .main-promociones{
@@ -287,6 +295,7 @@ main{
   font-family: 'Livvic';
   color: #D9D9D9;
   font-size: 20px;
+  text-align: justify;
 }
 
 .box1-imagen-promociones{
@@ -310,23 +319,25 @@ main{
   flex: 1;
 }
 
-.box1-ideas-promociones h2{
+.box2-promociones-agenda{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.promociones-h2{
   font-family: 'Merienda';
   font-size: 24px;
   color: #ECB935;
   margin-bottom: 40px;
-}
-
-.box2-promociones-agenda{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 100px;
+  text-align: center;
 }
 
 .promocion{
   flex: 1;
+  margin: 0 30px 50px;
 }
+
 .promocion img{
   width: 100%;
 }
@@ -342,10 +353,12 @@ main{
   font-family: 'Livvic';
   color: #D9D9D9;
   font-size: 25px;
+  text-align: justify;
 }
 
 .box2-agendar{
   align-self: center;
+  display: flex;
 }
 
 /* -----------------MAIN COTIZA--------------------- */
@@ -365,6 +378,7 @@ main{
   font-family: 'Merienda';
   font-size: 40px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .box1-descrip-form{
@@ -374,6 +388,7 @@ main{
 .box1-descrip-form p{
   font-family: 'Livvic';
   font-size: 20px;
+  text-align: justify;
 }
 
 .box1-descrip-form *{
@@ -441,6 +456,12 @@ form div{
   text-align: center;
   margin-bottom: 25px;
 }
+
+.box2-informacion p{
+  font-size: 18px;
+  text-align: justify;
+}
+
 
 /* -----------------MAIN CONTACTO--------------------- */
 
@@ -666,8 +687,8 @@ footer{
 
 @media(max-width: 1024px){   /*TABLET*/
   /* -----------------HEADER----------------- */
-  header{
-    padding: 0 50px;
+header{
+  padding: 0 50px;
 }
 
 .menu-btn {
@@ -694,6 +715,10 @@ nav{
       margin: 0;
       padding: 20px 60px;
       text-align: center;
+  }
+
+  .enlace-opcion:hover{
+    background-color: #d9d9d914;
   }
 
   .menu-toggle:checked + .menu-btn .menu-icon:nth-child(1) {
@@ -771,6 +796,7 @@ nav{
     border-radius: 15px;
     box-shadow: 15px 15px 15px 5px #000000;
     transition: background .45s;
+    margin-bottom: 35px;
   }
 
   .promocion:hover{
@@ -795,7 +821,7 @@ nav{
   }
 
   .box2-agendar:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   
 
