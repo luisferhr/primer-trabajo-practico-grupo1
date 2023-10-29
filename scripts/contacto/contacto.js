@@ -43,12 +43,15 @@ miFormularioContacto.addEventListener("submit", function(event){
                             formData.append("asunto", asunto.value);
                             formData.append("descripcion", descripcion.value);
 
-                        miFormularioContacto.reset();
+                        alert(`Gracia ${nombre.value}, tus comentarios fueron enviados exitosamente, nuestro equipo se pondrá en contacto contigo lo más pronto posible.`)
 
                         fetch(miFormularioContacto.action, {
                             method: "POST",
                             body: formData
                         })
+
+                        miFormularioContacto.reset();
+                        window.location.href = 'main.html';
                     }
                     else{
                         alert('Complete campo Descripcion. ')

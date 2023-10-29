@@ -64,12 +64,16 @@ formulario.addEventListener("submit", function(event){
                             formData.append("descripcion", descripcion.value);
                             formData.append("tipo", tipo);
 
-                            formulario.reset();
-
                             fetch(formulario.action, {
                                 method: "POST",
                                 body: formData
                             })
+
+                            alert(`Gracia ${nombre.value}, tu solicitud de cotizacion fue enviada exitosamente, nuestro equipo se pondrá en contacto contigo lo más pronto posible.`)
+
+                            formulario.reset();
+                            window.location.href = 'main.html';
+
                         } else {
                             alert('Seleccione el tipo de color del tatuaje');
                         }
