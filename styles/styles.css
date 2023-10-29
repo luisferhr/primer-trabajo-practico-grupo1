@@ -530,23 +530,20 @@ form div{
   font-family: 'Merienda', cursive;
   font-size: bold;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .introduccion {
-  margin-top: 25px;
+  margin: 60px 0;
   font-family: 'Livvic';
   color: #D9D9D9;
   font-size: 20px;
   text-align: justify;
-  padding: 2%;
 }
 
 .cursos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  padding: 2%;
+  grid-gap: 30px;
 }
 
 .curso {
