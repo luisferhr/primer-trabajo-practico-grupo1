@@ -225,7 +225,13 @@ main{
   max-width: 32%;
   min-width: 115px;
   margin-bottom: 10px;
-} 
+  transition: transform 0.5s; /* Transición para el efecto de zoom */
+  border: 1px solid rgba(0, 0, 0, 0.466)
+}
+
+.box1-idea-imagenes img:hover{
+  transform: scale(1.5); /* Aumenta el tamaño al doble */
+}
 
 .box2-trabajos-agenda{
   display: flex;
@@ -366,6 +372,15 @@ main{
 .box2-agendar{
   align-self: center;
   display: flex;
+}
+
+.box2-agendar{
+  margin: 0 0 40px 0;
+  transition: .45s;
+}
+
+.box2-agendar:hover{
+  transform: scale(1.1);
 }
 
 /* -----------------MAIN COTIZA--------------------- */
@@ -515,16 +530,13 @@ form div{
 }
 /* -----------------MAIN CURSOS---------------- */
 
-.main-cursos{
-  padding: 50px;
-}
-
 .titulocurso{
   color: #e9be50e4;
   font-size: 40px;
   font-family: 'Merienda', cursive;
   font-size: bold;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .introduccion {
@@ -585,9 +597,14 @@ form div{
 .info > a{
   text-decoration: none;
   font-weight: bold;
-  color: #ff7300;
+  color: #9f7f2e;
   display: block;
   text-align: right;
+  transition: 1s;
+}
+
+.info a:hover{
+  transform: scale(1.05);
 }
 
 .curso:hover .imgcursos {
@@ -599,7 +616,7 @@ form div{
   opacity: 1;
 }
 
-.botoncurso {
+.botoncurso{
   background-color: #1a0079; 
   color: #000000; 
   padding: 10px 20px; 
@@ -610,14 +627,17 @@ form div{
   font-size: 1rem; 
   font-weight: bold; 
   text-transform: uppercase; 
-  transition: background-color 0.3s, color 0.3s;
+  transition: 0.5s;
   align-items: end;
   opacity: 0;
 }
 .curso:hover .botoncurso {
   background-color: #ffc400;
   opacity: 1;
-  transition-duration: 0.5ms;
+}
+
+.botoncurso:hover{
+  transform: scale(1.1);
 }
 /* -----------------FOOTER----------------- */
 
@@ -658,7 +678,7 @@ footer{
 .lista-footer a:hover {
   font-size: 1.1rem;
   transition: ease 0.2s;
-  color: #ECB935;
+  color: #ecb83596;
 }
 
 .link-footer{
@@ -829,14 +849,7 @@ nav{
     text-align: center;
   }
 
-  .box2-agendar{
-    margin: 0 0 40px 0;
-    transition: .45s;
-  }
 
-  .box2-agendar:hover{
-    transform: scale(1.1);
-  }
   
 
   /* --------------------CURSOS---------------------- */
@@ -1004,12 +1017,13 @@ nav{
 
 
    /* -----------------CURSOS----------------- */
-   .main-cursos{
-    padding: 50px;
-  }
+
+   .titulocurso{
+    font-size: 30px;
+   }
    .introduccion{
     padding: 2%;
-    font-size:  1rem;
+    font-size: 18px;
   }
   .cursos{
     display: flex;
@@ -1018,9 +1032,8 @@ nav{
     align-items: center;
   }
   .imgcursos{
-    width: 20rem; 
-    height: 20rem;
-    display: flex;
+    max-width: 250px; 
+    height: 320px;
     justify-content: center;
     align-items: center;
   }
