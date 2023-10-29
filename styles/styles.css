@@ -162,7 +162,7 @@ main{
 
 /* -----------------MAIN - CONOCEME----------------- */
 
-.main-conoceme{
+.main{
   padding: 50px 100px;
 }
 
@@ -281,10 +281,6 @@ main{
 
 /* -----------------MAIN - PROMOCIONES ----------------- */
 
-.main-promociones{
-  padding: 50px 100px;
-}
-
 .box1-promociones{
   display: flex;
   margin-bottom: 50px;
@@ -390,7 +386,6 @@ main{
 }
 
 .main-cotiza{
-  padding: 50px 100px;
   display: flex;
   gap: 40px;
 }
@@ -492,7 +487,6 @@ form div{
 }
 
 .main-contacto{
-  padding: 90px 100px;
   display: flex;
   gap: 40px;
 }
@@ -729,6 +723,10 @@ header{
     display: block;
 }
 
+.main{
+  padding: 80px;
+}
+
 nav{
     position: absolute;
     top: 120px;
@@ -849,23 +847,19 @@ nav{
     text-align: center;
   }
 
-
-  
-
   /* --------------------CURSOS---------------------- */
   .textoCursos{
-    font-size: 1rem;
+    font-size: 16px;
   }
+
   .introduccion{
-    padding: 2%;
-    margin: 2%;
-    font-size:  1rem;
+    font-size: 20px;
+    margin-bottom: 20px;
   }
+
   .cursos{
     display: flex;
     flex-direction: column;
-    margin: 2%;
-    padding: 2%;
     justify-content: space-between;
     align-items: center;
   }
@@ -878,7 +872,7 @@ nav{
   }
 
   .textoCursos{
-    font-size: 1rem;
+    font-size: 16px;
     text-align: left;
   }
 
